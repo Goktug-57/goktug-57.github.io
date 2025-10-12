@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goktug Portfolio</title>
+<style>
+  /* Reset & base */
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Merriweather', serif; }
+  body { background: #f4eee8; color: #333; line-height:1.6; }
+  a { text-decoration: none; color: inherit; }
+
+  .logo {font-size: 1.8rem; font-weight: bold; color: #3a3b2f;}
+
+  /* Navigation */
+  nav { background: #fff0e5; padding: 1rem 2rem; display:flex; justify-content: space-between; align-items:center; box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+  nav ul { list-style:none; display:flex; gap:1rem; }
+  nav ul li { padding:0.5rem 1rem; transition:0.3s; }
+  nav ul li:hover { background: #ffe0b3; border-radius:5px; }
+
+  /* Hero section */
+  .hero { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; height:80vh; background: url('images/wp.jpg') no-repeat center/cover; padding:2rem;}
+  .hero h1 { font-size:5rem; margin-bottom:1rem; color:#fff7f0; }
+  .hero p { font-size:1.9rem; max-width:900px; color:#fff7f0; }
+
+  /* Contact section */
+  .contact { background: #fff7f0; padding:2rem; display:flex; flex-direction:column; align-items:center; text-align:center;}
+  .contact h2 { margin-bottom:1rem; color:#7a5c4f }
+
+  /* Footer */
+  footer { text-align:center; padding:1rem; font-size:0.9rem; color:#7a5c4f; }
+
+  /* Responsive */
+  @media(max-width:768px){
+    .hero h1 { font-size:2.2rem; }
+    .hero p { font-size:1rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Goktug</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Sadi Goktug Deveci</h1>
+  <p>Computer Engineer | AI & ML | Deep Learning | Computer Vision Enthusiast</p>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p>Email: <a href="mailto:deveci5739@proton.me">deveci5739@proton.me</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/goktugdeveci" target="_blank">linkedin.com/in/goktugdeveci</a></p>
+    <p>GitHub: <a href="https://github.com/goktug-57" target="_blank">github.com/goktug-57</a></p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Goktug. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+

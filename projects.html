@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Goktug Portfolio</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Merriweather', serif; }
+  body { background: #f4eee8; color: #333; line-height:1.6; }
+  a { text-decoration: none; color: inherit; }
+
+  .logo {font-size: 1.8rem; font-weight: bold; color: #3a3b2f;}
+
+  nav { background: #fff0e5; padding: 1rem 2rem; display:flex; justify-content: space-between; align-items:center; box-shadow:0 2px 5px rgba(0,0,0,0.05);}
+  nav ul { list-style:none; display:flex; gap:1rem; }
+  nav ul li { padding:0.5rem 1rem; transition:0.3s; }
+  nav ul li:hover { background: #ffe0b3; border-radius:5px; }
+
+  .page-hero { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; height:40vh; background: url('images/projects_banner.jpg') no-repeat center/cover; padding:2rem;}
+  .page-hero h1 { font-size:2.8rem; margin-bottom:1rem; color:#fff7f0; }
+  .page-hero p { font-size:1.2rem; max-width:600px; color:#fff7f0; }
+
+  .projects { padding:2rem; display:flex; flex-direction:column; align-items:center; gap:2rem; }
+
+  .project-card {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1.5rem;
+    background:#fff7f0;
+    padding:1.5rem;
+    border-radius:8px;
+    width:100%;
+    max-width:1200px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    transition:0.3s;
+    cursor:pointer;
+  }
+  .project-card:hover {
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    transform:translateY(-2px);
+  }
+
+  .project-content { flex:1; }
+
+  .project-card img {
+    width:200px;
+    height:130px;
+    object-fit:cover;
+    border-radius:6px;
+  }
+  .project-card span {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    font-size:0.8rem;
+    color:#3a3b2f;
+    background:rgba(255,255,255,0.6);
+    padding:2px 5px;
+    border-radius:3px;
+    font-family: 'Merriweather', serif;
+  }
+
+  footer { text-align:center; padding:1rem; font-size:0.9rem; color:#7a5c4f; }
+
+  @media(max-width:768px){
+    .page-hero h1 { font-size:2.2rem; }
+    .page-hero p { font-size:1rem; }
+    .project-card { width:95%; flex-direction:column; align-items:flex-start; }
+    .project-card img { width:100%; height:200px; }
+    .project-card span { bottom:10px; right:10px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Goktug</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <h1>My Projects</h1>
+  <p></p>
+</section>
+
+<section class="projects">
+  <a href="projects/project_nasaspaceapps.html" class="project-card">
+    <div class="project-content">
+      <h2>AI-Based Exoplanet Classification System</h2>
+      <p>We achieved 2nd place in the NASA Space Apps 2025.</p>
+      <p>My main role was developing Neural Network in the team.</p>
+      <p>We developed and trained deep learning model on NASA TESS data, that classifies objects into Confirmed Planets (CP), Planet Candidates (PC), or False Positives (FP).</p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_00.png" alt="Exoplanet Project Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_face.html" class="project-card">
+    <div class="project-content">
+      <h2>Real-Time Face Detection and Recognition Using YOLO and FaceNet</h2>
+      <p>I developed an algorithm detecting and recognizing human faces from live video feed.</p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_sheep.html" class="project-card">
+    <div class="project-content">
+      <h2>Sheep Counting Deep Learning Model</h2>
+      <p>I developed a 3D CNN model to estimate sheep counts from video.</p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_alu.html" class="project-card">
+    <div class="project-content">
+      <h2>32-bit ALU</h2>
+      <p>I designed and implemented a 32-bit ALU in Verilog as a logical system design project.</p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_riscv.html" class="project-card">
+    <div class="project-content">
+      <h2>FBU RISCV</h2>
+      <p>Computer architecture class project.</p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_game.html" class="project-card">
+    <div class="project-content">
+      <h2>Quantum Showdown</h2>
+      <p>I developed a 2D arcade-like game for Qjam2024.</p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_face.html" class="project-card">
+    <div class="project-content">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+
+  <a href="projects/project_face.html" class="project-card">
+    <div class="project-content">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div style="position:relative;">
+      <img src="images/project_banner_01.png" alt="Project 2 Thumbnail">
+      <span>Click for more detail</span>
+    </div>
+  </a>
+</section>
+
+<footer>
+  &copy; 2025 Goktug. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
