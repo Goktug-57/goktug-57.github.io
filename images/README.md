@@ -1,0 +1,3 @@
+# Images
+
+This folder contains image files used in the project.
